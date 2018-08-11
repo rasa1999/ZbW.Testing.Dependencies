@@ -1,4 +1,4 @@
-﻿namespace ZbW.Testing.Dependencies.Lib.Fakes
+﻿namespace ZbW.Testing.Dependencies.Lib.UnitTests.Fakes
 {
     using System.Diagnostics.CodeAnalysis;
 

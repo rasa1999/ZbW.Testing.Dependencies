@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fakes\DateTimeGeneratorMock.cs" />
+    <Compile Include="Fakes\DateTimeGeneratorStub.cs" />
     <Compile Include="FileNameGeneratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

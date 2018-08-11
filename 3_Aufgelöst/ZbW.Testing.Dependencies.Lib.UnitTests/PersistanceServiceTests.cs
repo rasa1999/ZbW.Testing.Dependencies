@@ -2,7 +2,7 @@
 {
     using NUnit.Framework;
 
-    using ZbW.Testing.Dependencies.Lib.Fakes;
+    using ZbW.Testing.Dependencies.Lib.UnitTests.Fakes;
 
     [TestFixture]
     public class PersistanceServiceTests

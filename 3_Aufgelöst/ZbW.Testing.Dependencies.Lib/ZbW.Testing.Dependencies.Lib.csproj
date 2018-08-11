@@ -40,12 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fakes\FileAnalyzerMock.cs" />
     <Compile Include="FileAnalyzer.cs" />
     <Compile Include="IFileAnalyzer.cs" />
     <Compile Include="PersistanceService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Fakes\FileAnalyzerStub.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

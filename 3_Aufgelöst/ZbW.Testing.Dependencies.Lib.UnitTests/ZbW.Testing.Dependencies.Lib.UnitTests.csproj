@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fakes\FileAnalyzerMock.cs" />
+    <Compile Include="Fakes\FileAnalyzerStub.cs" />
     <Compile Include="PersistanceServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
