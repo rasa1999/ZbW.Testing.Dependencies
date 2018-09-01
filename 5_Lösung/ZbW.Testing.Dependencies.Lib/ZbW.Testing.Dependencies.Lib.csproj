@@ -41,8 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DateTimeGenerator.cs" />
-    <Compile Include="Fakes\DateTimeGeneratorMock.cs" />
-    <Compile Include="Fakes\DateTimeGeneratorStub.cs" />
     <Compile Include="FileNameGenerator.cs" />
     <Compile Include="IDateTimeGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
