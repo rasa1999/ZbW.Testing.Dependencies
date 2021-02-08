@@ -4,19 +4,19 @@
 
     public class PersistanceService
     {
+        private const string XmlExtension = "xml";
+
         public bool IsFileValid(string path)
         {
             var fileInfo = new FileInfo(path);
 
-            // überprüfen, ob das Format korrekt ist
-            // CODE - Zur Überprüfung des Formats
-            var isValidFormat = true;
+            // Überprüft ob das Format korrekt ist
+            var isValidFormat = fileInfo.Extension == XmlExtension;
 
-            // überprüfung der Zugriffsrechte
-            // CODE - Zur prüfung der Rechte
-            var isAuthorized = true;
+            // Überprüft ob das File existiert
+            var isExisting = fileInfo.Exists;
 
-            return isValidFormat && isAuthorized;
+            return isValidFormat && isExisting;
         }
     }
 }

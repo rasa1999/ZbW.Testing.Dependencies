@@ -4,6 +4,6 @@
     {
         bool CheckFormat(string path);
 
-        bool CheckPermissions(string path);
+        bool CheckExists(string path);
     }
 }

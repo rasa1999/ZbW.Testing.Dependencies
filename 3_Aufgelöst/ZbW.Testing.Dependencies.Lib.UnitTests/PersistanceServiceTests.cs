@@ -1,9 +1,8 @@
-﻿namespace ZbW.Testing.Dependencies.Lib.UnitTests
+﻿using NUnit.Framework;
+using ZbW.Testing.Dependencies.Lib.UnitTests.Fakes;
+
+namespace ZbW.Testing.Dependencies.Lib.UnitTests
 {
-    using NUnit.Framework;
-
-    using ZbW.Testing.Dependencies.Lib.UnitTests.Fakes;
-
     [TestFixture]
     public class PersistanceServiceTests
     {
@@ -63,7 +62,7 @@
 
             // assert
             Assert.That(fileAnalyzerMock.CheckFormatCalled, Is.True);
-            Assert.That(fileAnalyzerMock.CheckPermissionsCalled, Is.True);
+            Assert.That(fileAnalyzerMock.CheckExistsCalled, Is.True);
         }
     }
 }

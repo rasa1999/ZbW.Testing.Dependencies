@@ -12,9 +12,9 @@
         public bool IsFileValid(string path)
         {
             var isValidFormat = _fileAnalyzer.CheckFormat(path);
-            var isAuthorized = _fileAnalyzer.CheckPermissions(path);
+            var isExisting = _fileAnalyzer.CheckExists(path);
 
-            return isValidFormat && isAuthorized;
+            return isValidFormat && isExisting;
         }
     }
 }

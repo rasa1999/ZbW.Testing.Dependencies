@@ -1,25 +1,21 @@
-﻿namespace ZbW.Testing.Dependencies.Lib
-{
-    using System.IO;
+﻿using System.IO;
 
+namespace ZbW.Testing.Dependencies.Lib
+{
     public class FileAnalyzer : IFileAnalyzer
     {
+        private const string XmlExtension = "xml";
+
         public bool CheckFormat(string path)
         {
             var fileInfo = new FileInfo(path);
-
-            // überprüfen, ob das Format korrekt ist
-            // CODE - Zur Überprüfung des Formats
-            return true;
+            return fileInfo.Extension == XmlExtension;
         }
 
-        public bool CheckPermissions(string path)
+        public bool CheckExists(string path)
         {
             var fileInfo = new FileInfo(path);
-
-            // überprüfung der Zugriffsrechte
-            // CODE - Zur prüfung der Rechte
-            return true;
+            return fileInfo.Exists;
         }
     }
 }

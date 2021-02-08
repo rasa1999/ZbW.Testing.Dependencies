@@ -1,13 +1,13 @@
-﻿namespace ZbW.Testing.Dependencies.Lib.UnitTests.Fakes
-{
-    using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
+namespace ZbW.Testing.Dependencies.Lib.UnitTests.Fakes
+{
     [ExcludeFromCodeCoverage]
     public class FileAnalyzerMock : IFileAnalyzer
     {
         public bool CheckFormatCalled { get; private set; }
 
-        public bool CheckPermissionsCalled { get; private set; }
+        public bool CheckExistsCalled { get; private set; }
 
         public bool CheckFormat(string path)
         {
@@ -15,9 +15,9 @@
             return true;
         }
 
-        public bool CheckPermissions(string path)
+        public bool CheckExists(string path)
         {
-            CheckPermissionsCalled = true;
+            CheckExistsCalled = true;
             return true;
         }
     }
