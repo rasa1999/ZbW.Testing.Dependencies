@@ -8,7 +8,7 @@ namespace ZbW.Testing.Dependencies.Lib.Test
         [Test]
         public void Generate_GenerateString_ReturnRaphael19990314000000dotpdf()
         {
-            var stub = new DateTimeGenerator(1999, 3, 14, 0, 0, 0);
+            var stub = new DateTimeGeneratorStub(1999, 3, 14, 0, 0, 0);
             var sut = new FileNameGenerator(stub);
 
             var expected = sut.ReturnFileName("Raphael", "pdf");
